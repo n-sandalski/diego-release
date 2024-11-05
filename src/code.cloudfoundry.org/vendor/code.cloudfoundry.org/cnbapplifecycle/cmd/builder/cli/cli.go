@@ -7,8 +7,10 @@ import (
 	"encoding/json"
 	"os"
 	"path/filepath"
+	"runtime"
 
 	"code.cloudfoundry.org/cnbapplifecycle/pkg/archive"
+	"code.cloudfoundry.org/cnbapplifecycle/pkg/buildpacks"
 	"code.cloudfoundry.org/cnbapplifecycle/pkg/errors"
 	"code.cloudfoundry.org/cnbapplifecycle/pkg/keychain"
 	"code.cloudfoundry.org/cnbapplifecycle/pkg/log"
@@ -30,7 +32,7 @@ import (
 )
 
 const (
-	PlatformAPI          = "0.13"
+	PlatformAPI          = "0.14"
 	DefaultLayersPath    = "/home/vcap/layers"
 	DefaultWorkspacePath = "/home/vcap/workspace"
 )
@@ -42,8 +44,9 @@ var (
 	cacheOutputFile string
 	result          string
 	dropletFile     string
-	buildpacks      []string
+	buildpackList   []string
 	envVarNames     []string
+	autoDetect      bool
 )
 
 var (
@@ -58,7 +61,7 @@ func Execute() error {
 }
 
 func init() {
-	builderCmd.Flags().StringSliceVarP(&buildpacks, "buildpack", "b", nil, "buildpack(s) to use")
+	builderCmd.Flags().StringSliceVarP(&buildpackList, "buildpack", "b", nil, "buildpack(s) to use")
 	builderCmd.Flags().StringVarP(&dropletFile, "droplet", "d", "/tmp/droplet", "output droplet file")
 	builderCmd.Flags().StringVarP(&result, "result", "r", "/tmp/result.json", "result file")
 	builderCmd.Flags().StringVarP(&workspaceDir, "workspace-dir", "w", DefaultWorkspacePath, "app workspace dir")
@@ -66,6 +69,7 @@ func init() {
 	builderCmd.Flags().StringSliceVarP(&envVarNames, "pass-env-var", "", nil, "environment variable(s) to pass to buildpacks")
 	builderCmd.Flags().StringVarP(&cacheDir, "cache-dir", "c", "/tmp/cache", "cache dir")
 	builderCmd.Flags().StringVarP(&cacheOutputFile, "cache-output", "", "/tmp/cache-output.tgz", "cache output")
+	builderCmd.Flags().BoolVar(&autoDetect, "auto-detect", false, "run auto-detection with the provided buildpacks")
 	_ = builderCmd.MarkFlagRequired("buildpack")
 }
 
@@ -101,17 +105,32 @@ var builderCmd = &cobra.Command{
 			return errors.ErrGenericBuild
 		}
 
+		analyzePath := filepath.Join(layersDir, "analyzed.toml")
+		analyzeMD, err := writeAnalyzed(analyzePath, logger)
+		if err != nil {
+			logger.Errorf("failed to create 'analyzed.toml', error: %s\n", err.Error())
+			return errors.ErrGenericBuild
+		}
+
 		creds, err := keychain.FromEnv()
 		if err != nil {
 			logger.Errorf("failed to parse %s environment variable, error: %s\n", keychain.CnbCredentialsEnv, err.Error())
 			return errors.ErrGenericBuild
 		}
-		err = staging.DownloadBuildpacks(
-			buildpacks,
+
+		buildpackList, err = buildpacks.Translate(buildpackList, buildpacksDir, logger)
+		if err != nil {
+			logger.Errorf("failed to translate buildpack locations %#v, error: %s\n", buildpackList, err.Error())
+			return errors.ErrDownloadingBuildpack
+		}
+
+		err = buildpacks.DownloadBuildpacks(
+			buildpackList,
 			buildpacksDir,
 			image.NewFetcher(logger, nil, image.WithKeychain(creds)),
 			blob.NewDownloader(logger, downloadCacheDir, blob.WithClient(keychain.NewHTTPClient(creds))),
 			orderFile,
+			autoDetect,
 			logger,
 		)
 		if err != nil {
@@ -128,6 +147,7 @@ var builderCmd = &cobra.Command{
 		)
 
 		detector, err := detectorFactory.NewDetector(platform.LifecycleInputs{
+			AnalyzedPath:  analyzePath,
 			PlatformAPI:   platformAPI,
 			AppDir:        workspaceDir,
 			BuildpacksDir: buildpacksDir,
@@ -150,7 +170,7 @@ var builderCmd = &cobra.Command{
 		}
 
 		logger.Phase("RESTORING")
-		cache, err := cache.NewVolumeCache(cacheDir)
+		cache, err := cache.NewVolumeCache(cacheDir, logger)
 		if err != nil {
 			logger.Errorf("failed to initialise cache, error: %s\n", err.Error())
 			return errors.ErrRestoring
@@ -179,7 +199,7 @@ var builderCmd = &cobra.Command{
 			Err:           os.Stderr,
 			Plan:          plan,
 			PlatformAPI:   platformAPI,
-			AnalyzeMD:     files.Analyzed{},
+			AnalyzeMD:     analyzeMD,
 		}
 
 		logger.Phase("BUILDING")
@@ -269,4 +289,17 @@ var builderCmd = &cobra.Command{
 
 		return nil
 	},
+}
+
+func writeAnalyzed(path string, logger *log.Logger) (files.Analyzed, error) {
+	analyzed := files.Analyzed{
+		RunImage: &files.RunImage{
+			TargetMetadata: &files.TargetMetadata{
+				OS:   "linux",
+				Arch: runtime.GOARCH,
+			},
+		},
+	}
+
+	return analyzed, files.Handler.WriteAnalyzed(path, &analyzed, logger)
 }
