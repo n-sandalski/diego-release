@@ -15,6 +15,7 @@ files:
   - code.cloudfoundry.org/vendor/code.cloudfoundry.org/cnbapplifecycle/cmd/launcher/*.go # gosub
   - code.cloudfoundry.org/vendor/code.cloudfoundry.org/cnbapplifecycle/cmd/launcher/cli/*.go # gosub
   - code.cloudfoundry.org/vendor/code.cloudfoundry.org/cnbapplifecycle/pkg/archive/*.go # gosub
+  - code.cloudfoundry.org/vendor/code.cloudfoundry.org/cnbapplifecycle/pkg/buildpacks/*.go # gosub
   - code.cloudfoundry.org/vendor/code.cloudfoundry.org/cnbapplifecycle/pkg/errors/*.go # gosub
   - code.cloudfoundry.org/vendor/code.cloudfoundry.org/cnbapplifecycle/pkg/keychain/*.go # gosub
   - code.cloudfoundry.org/vendor/code.cloudfoundry.org/cnbapplifecycle/pkg/log/*.go # gosub
