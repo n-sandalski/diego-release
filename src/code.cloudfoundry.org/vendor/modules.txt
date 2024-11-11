@@ -45,7 +45,7 @@ code.cloudfoundry.org/cnbapplifecycle/pkg/staging
 # code.cloudfoundry.org/commandrunner v0.17.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/commandrunner
-# code.cloudfoundry.org/credhub-cli v0.0.0-20241104235029-3abce2cb0fc6
+# code.cloudfoundry.org/credhub-cli v0.0.0-20241111140541-fdb2c1524e73
 ## explicit; go 1.22.0
 code.cloudfoundry.org/credhub-cli/credhub
 code.cloudfoundry.org/credhub-cli/credhub/auth
@@ -95,7 +95,7 @@ code.cloudfoundry.org/go-diodes
 code.cloudfoundry.org/go-loggregator/v9
 code.cloudfoundry.org/go-loggregator/v9/rpc/loggregator_v2
 code.cloudfoundry.org/go-loggregator/v9/runtimeemitter
-# code.cloudfoundry.org/goshims v0.48.0
+# code.cloudfoundry.org/goshims v0.49.0
 ## explicit; go 1.23
 code.cloudfoundry.org/goshims/filepathshim
 code.cloudfoundry.org/goshims/http_wrap
@@ -341,7 +341,7 @@ github.com/aws/smithy-go/tracing
 github.com/aws/smithy-go/transport/http
 github.com/aws/smithy-go/transport/http/internal/io
 github.com/aws/smithy-go/waiter
-# github.com/awslabs/amazon-ecr-credential-helper/ecr-login v0.0.0-20241108155902-05335cc99893
+# github.com/awslabs/amazon-ecr-credential-helper/ecr-login v0.0.0-20241109154730-cb9aea31c81f
 ## explicit; go 1.21
 github.com/awslabs/amazon-ecr-credential-helper/ecr-login
 github.com/awslabs/amazon-ecr-credential-helper/ecr-login/api
@@ -439,7 +439,7 @@ github.com/cloudfoundry/dropsonde/runtime_stats
 # github.com/cloudfoundry/go-socks5 v0.0.0-20240831012420-2590b55236ee
 ## explicit; go 1.21.0
 github.com/cloudfoundry/go-socks5
-# github.com/cloudfoundry/socks5-proxy v0.2.130
+# github.com/cloudfoundry/socks5-proxy v0.2.131
 ## explicit; go 1.22.0
 github.com/cloudfoundry/socks5-proxy
 # github.com/cloudfoundry/sonde-go v0.0.0-20241016180203-3c0e1c24e908

@@ -27,7 +27,7 @@ require (
 	code.cloudfoundry.org/cfhttp/v2 v2.20.0
 	code.cloudfoundry.org/clock v1.20.0
 	code.cloudfoundry.org/cnbapplifecycle v0.0.3
-	code.cloudfoundry.org/credhub-cli v0.0.0-20241104235029-3abce2cb0fc6
+	code.cloudfoundry.org/credhub-cli v0.0.0-20241111140541-fdb2c1524e73
 	code.cloudfoundry.org/debugserver v0.23.0
 	code.cloudfoundry.org/diego-logging-client v0.28.0
 	code.cloudfoundry.org/dockerdriver v0.23.0
@@ -35,7 +35,7 @@ require (
 	code.cloudfoundry.org/eventhub v0.17.0
 	code.cloudfoundry.org/garden v0.0.0-20241107162114-a06abf44be56
 	code.cloudfoundry.org/go-loggregator/v9 v9.2.1
-	code.cloudfoundry.org/goshims v0.48.0
+	code.cloudfoundry.org/goshims v0.49.0
 	code.cloudfoundry.org/guardian v0.0.0-20241107163220-26cb5966fa4d
 	code.cloudfoundry.org/lager/v3 v3.14.0
 	code.cloudfoundry.org/localip v0.18.0
@@ -43,7 +43,7 @@ require (
 	github.com/GaryBoone/GoStats v0.0.0-20130122001700-1993eafbef57
 	github.com/ajstarks/svgo v0.0.0-20211024235047-1546f124cd8b
 	github.com/aws/aws-sdk-go v1.55.5
-	github.com/awslabs/amazon-ecr-credential-helper/ecr-login v0.0.0-20241108155902-05335cc99893
+	github.com/awslabs/amazon-ecr-credential-helper/ecr-login v0.0.0-20241109154730-cb9aea31c81f
 	github.com/cactus/go-statsd-client v3.1.1-0.20161031215955-d8eabe07bc70+incompatible
 	github.com/cespare/xxhash/v2 v2.3.0
 	github.com/cloudfoundry-community/go-uaa v0.3.3
@@ -137,7 +137,7 @@ require (
 	github.com/census-instrumentation/opencensus-proto v0.4.1 // indirect
 	github.com/chrismellard/docker-credential-acr-env v0.0.0-20230304212654-82a0ddb27589 // indirect
 	github.com/cloudfoundry/go-socks5 v0.0.0-20240831012420-2590b55236ee // indirect
-	github.com/cloudfoundry/socks5-proxy v0.2.130 // indirect
+	github.com/cloudfoundry/socks5-proxy v0.2.131 // indirect
 	github.com/cloudfoundry/sonde-go v0.0.0-20241016180203-3c0e1c24e908 // indirect
 	github.com/cncf/xds/go v0.0.0-20240905190251-b4127c9b8d78 // indirect
 	github.com/containerd/log v0.1.0 // indirect

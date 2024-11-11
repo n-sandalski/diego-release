@@ -738,8 +738,8 @@ code.cloudfoundry.org/cnbapplifecycle v0.0.3 h1:wPr0uLZJxLGHh/rX+X3acT30AivGFTWF
 code.cloudfoundry.org/cnbapplifecycle v0.0.3/go.mod h1:+63pUe6UrEe7WWEqM3wp1ph+H4VpDcxe5Tg+9umuMJs=
 code.cloudfoundry.org/commandrunner v0.17.0 h1:T2VAj/0iaIkI0aJ0Hwdt/OD8nDae8oykGUyO2kY2kLY=
 code.cloudfoundry.org/commandrunner v0.17.0/go.mod h1:C3OTRk8cFEQ4Gr+y/rgea1UxsXN/66t8E1QXRQ2417w=
-code.cloudfoundry.org/credhub-cli v0.0.0-20241104235029-3abce2cb0fc6 h1:+RQL9Bg4rHoGcqv4/3NRP7fU3jw5V4aJ1/lmc2Rk4pg=
-code.cloudfoundry.org/credhub-cli v0.0.0-20241104235029-3abce2cb0fc6/go.mod h1:Q9Juf11ubMhZE3AWXuW8bd/yUAm1YAiTLOUq759fwKQ=
+code.cloudfoundry.org/credhub-cli v0.0.0-20241111140541-fdb2c1524e73 h1:/y2Jw7CI0ANGhc7rGCov6YxybKTbF5/K7ua+RukhbgA=
+code.cloudfoundry.org/credhub-cli v0.0.0-20241111140541-fdb2c1524e73/go.mod h1:MciAoCMNWj05jcKK9eHeoPtB26i2S0MLd5rjIas4aqA=
 code.cloudfoundry.org/debugserver v0.23.0 h1:zTS1n7upJKdfeH9q03h1USPNugc177Yy2QCTZZHep8k=
 code.cloudfoundry.org/debugserver v0.23.0/go.mod h1:tqFsug/E5mc8Iy/NsduLtMrBj3FfxvBH3uK4ZaK499I=
 code.cloudfoundry.org/diego-logging-client v0.28.0 h1:Op2fiyshZ/tV+UlPywmURZxhWYrfTjBgOej9E46xNWQ=
@@ -754,8 +754,8 @@ code.cloudfoundry.org/go-diodes v0.0.0-20241104194350-6f18271962f1 h1:hq2DOWkD1T
 code.cloudfoundry.org/go-diodes v0.0.0-20241104194350-6f18271962f1/go.mod h1:iKVp/Irul4GfauGPnBmTtaGY1RZm6nF5GW9ktab5CnU=
 code.cloudfoundry.org/go-loggregator/v9 v9.2.1 h1:S6Lgg5UJbhh2bt2TGQxs6R00CF8PrUA3GFPYDxy56Fk=
 code.cloudfoundry.org/go-loggregator/v9 v9.2.1/go.mod h1:FTFFruqGeOhVCDFvyLgl8EV8YW63NNwRzLhxJcporu8=
-code.cloudfoundry.org/goshims v0.48.0 h1:QbHLjOcJyuzN+/oRhgsGyobEuNFxiVEB07uDQAicSG4=
-code.cloudfoundry.org/goshims v0.48.0/go.mod h1:3Ix3MxKL99JTCzsXk7BkYuihOod0pucAGQsk7jz4dGY=
+code.cloudfoundry.org/goshims v0.49.0 h1:UwLcQ3dcfICwGrzRDWWZkPRka+K88RZbBylk8xFOXPc=
+code.cloudfoundry.org/goshims v0.49.0/go.mod h1:+A0cOA+FeFocdlCDhL4QFBWtbnnRuu3LW0seu03e/0A=
 code.cloudfoundry.org/lager/v3 v3.14.0 h1:W6W1VhS4df8TvXCVo0lj5ve/hjF6YarmU0hsjA/phg4=
 code.cloudfoundry.org/lager/v3 v3.14.0/go.mod h1:beQQaqGk0JSc5Nl/CZFGPCY05lm/wIRa+RoJh7Hz7jI=
 code.cloudfoundry.org/localip v0.18.0 h1:yCDdA7imPuCq/TrhHgoMqJrMAneE8L1ZTYBXHwm/oyA=
@@ -868,8 +868,8 @@ github.com/aws/aws-sdk-go-v2/service/sts v1.32.4 h1:yDxvkz3/uOKfxnv8YhzOi9m+2OGI
 github.com/aws/aws-sdk-go-v2/service/sts v1.32.4/go.mod h1:9XEUty5v5UAsMiFOBJrNibZgwCeOma73jgGwwhgffa8=
 github.com/aws/smithy-go v1.22.0 h1:uunKnWlcoL3zO7q+gG2Pk53joueEOsnNB28QdMsmiMM=
 github.com/aws/smithy-go v1.22.0/go.mod h1:irrKGvNn1InZwb2d7fkIRNucdfwR8R+Ts3wxYa/cJHg=
-github.com/awslabs/amazon-ecr-credential-helper/ecr-login v0.0.0-20241108155902-05335cc99893 h1:z9mB0IrTnNUdtgIq5745amNn+zjMb4C1VnDfIRmPtTY=
-github.com/awslabs/amazon-ecr-credential-helper/ecr-login v0.0.0-20241108155902-05335cc99893/go.mod h1:R0JoOrCtmR9Rb+bhnk38BD8mQGDqH1Q0Tvwp/0qwbwA=
+github.com/awslabs/amazon-ecr-credential-helper/ecr-login v0.0.0-20241109154730-cb9aea31c81f h1:SMbeBuM8hr+X7qOUDvlqaPsrinb05KcJa9pWrgIOLu0=
+github.com/awslabs/amazon-ecr-credential-helper/ecr-login v0.0.0-20241109154730-cb9aea31c81f/go.mod h1:uGxT0iuUWzrPS0xVh5KXpWSjKzWatV0ww2ljhcDCU5k=
 github.com/aybabtme/rgbterm v0.0.0-20170906152045-cc83f3b3ce59/go.mod h1:q/89r3U2H7sSsE2t6Kca0lfwTK8JdoNGS/yzM/4iH5I=
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
 github.com/beorn7/perks v1.0.0/go.mod h1:KWe93zE9D1o94FZ5RNwFwVgaQK1VOXiVxmqh+CedLV8=
@@ -912,8 +912,8 @@ github.com/cloudfoundry/dropsonde v1.1.0 h1:nerhj8K0heOsv/U/Ddou5Esw56YlNeHHJH6M
 github.com/cloudfoundry/dropsonde v1.1.0/go.mod h1:OrkxsBrAvM8X0Ve9vaSNKLR+/Jeohu3+J0M4JEaTmnM=
 github.com/cloudfoundry/go-socks5 v0.0.0-20240831012420-2590b55236ee h1:88ruSYvCUKX2YcF2CMYVTmPGITvNdRbzaBRk2c/iMds=
 github.com/cloudfoundry/go-socks5 v0.0.0-20240831012420-2590b55236ee/go.mod h1:72EEm1oq5oXqGfu9XGtaRPWEcAFYd/P10cMNln0QhA8=
-github.com/cloudfoundry/socks5-proxy v0.2.130 h1:IAHeKTaHdWgUtyCVVSaXqhCjiGWZayTE0SJdHBvJ3/Q=
-github.com/cloudfoundry/socks5-proxy v0.2.130/go.mod h1:9duujluYKBfoPe0Ad9+/9oZkPBep3pmaC3ePRSpWvt4=
+github.com/cloudfoundry/socks5-proxy v0.2.131 h1:487I7xX9PKDhobm4spBTCIZHbLCKVyFVsTWYFc39D7M=
+github.com/cloudfoundry/socks5-proxy v0.2.131/go.mod h1:GtZrczZKzFyoWVUtoCsMeGa8FD3Uo2LNJTcF8WgP+Fk=
 github.com/cloudfoundry/sonde-go v0.0.0-20241016180203-3c0e1c24e908 h1:hTZbUjHHExhpFrZxaG/yv87J5JT3Hr6tlLqiFXruUJg=
 github.com/cloudfoundry/sonde-go v0.0.0-20241016180203-3c0e1c24e908/go.mod h1:SiB/qvUutgBWlAEuiQLG3M+hEBeRHdNlMGq1YYjFo90=
 github.com/cncf/udpa/go v0.0.0-20191209042840-269d4d468f6f/go.mod h1:M8M6+tZqaGXZJjfX53e64911xZQV5JYwmTeXPW+k8Sc=
