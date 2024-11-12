@@ -1,19 +1,19 @@
 # cel.dev/expr v0.18.0
 ## explicit; go 1.21.1
 cel.dev/expr
-# code.cloudfoundry.org/archiver v0.18.0
+# code.cloudfoundry.org/archiver v0.19.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/archiver/compressor
 code.cloudfoundry.org/archiver/extractor
 code.cloudfoundry.org/archiver/extractor/test_helper
-# code.cloudfoundry.org/bytefmt v0.17.0
+# code.cloudfoundry.org/bytefmt v0.18.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/bytefmt
 # code.cloudfoundry.org/cacheddownloader v0.0.0-20241029001258-42f0e9a4d471
 ## explicit; go 1.21
 code.cloudfoundry.org/cacheddownloader
 code.cloudfoundry.org/cacheddownloader/cacheddownloaderfakes
-# code.cloudfoundry.org/certsplitter v0.22.0
+# code.cloudfoundry.org/certsplitter v0.23.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/certsplitter/cmd/certsplitter
 # code.cloudfoundry.org/cf-routing-test-helpers v0.0.0-20241025163157-ce30ff0fff6d
@@ -22,11 +22,11 @@ code.cloudfoundry.org/cf-routing-test-helpers/tls
 # code.cloudfoundry.org/cf-tcp-router v0.0.0-20241025163552-3216bbbc1656
 ## explicit
 code.cloudfoundry.org/cf-tcp-router/utils
-# code.cloudfoundry.org/cfhttp/v2 v2.20.0
+# code.cloudfoundry.org/cfhttp/v2 v2.21.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/cfhttp/v2
 code.cloudfoundry.org/cfhttp/v2/handlers
-# code.cloudfoundry.org/clock v1.20.0
+# code.cloudfoundry.org/clock v1.21.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/clock
 code.cloudfoundry.org/clock/fakeclock
@@ -55,23 +55,23 @@ code.cloudfoundry.org/credhub-cli/credhub/credentials/generate
 code.cloudfoundry.org/credhub-cli/credhub/credentials/values
 code.cloudfoundry.org/credhub-cli/credhub/permissions
 code.cloudfoundry.org/credhub-cli/credhub/server
-# code.cloudfoundry.org/debugserver v0.23.0
+# code.cloudfoundry.org/debugserver v0.24.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/debugserver
-# code.cloudfoundry.org/diego-logging-client v0.28.0
-## explicit; go 1.22.0
+# code.cloudfoundry.org/diego-logging-client v0.29.0
+## explicit; go 1.22.7
 code.cloudfoundry.org/diego-logging-client
 code.cloudfoundry.org/diego-logging-client/testhelpers
-# code.cloudfoundry.org/dockerdriver v0.23.0
+# code.cloudfoundry.org/dockerdriver v0.24.0
 ## explicit; go 1.23
 code.cloudfoundry.org/dockerdriver
 code.cloudfoundry.org/dockerdriver/dockerdriverfakes
 code.cloudfoundry.org/dockerdriver/driverhttp
 code.cloudfoundry.org/dockerdriver/utils
-# code.cloudfoundry.org/durationjson v0.18.0
+# code.cloudfoundry.org/durationjson v0.19.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/durationjson
-# code.cloudfoundry.org/eventhub v0.17.0
+# code.cloudfoundry.org/eventhub v0.18.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/eventhub
 # code.cloudfoundry.org/garden v0.0.0-20241107162114-a06abf44be56 => ../garden
@@ -114,17 +114,17 @@ code.cloudfoundry.org/guardian/rundmc/cgroups
 code.cloudfoundry.org/guardian/rundmc/cgroups/fs
 code.cloudfoundry.org/guardian/rundmc/event
 code.cloudfoundry.org/guardian/rundmc/goci
-# code.cloudfoundry.org/lager/v3 v3.14.0
+# code.cloudfoundry.org/lager/v3 v3.15.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/lager/v3
 code.cloudfoundry.org/lager/v3/internal/truncate
 code.cloudfoundry.org/lager/v3/lagerctx
 code.cloudfoundry.org/lager/v3/lagerflags
 code.cloudfoundry.org/lager/v3/lagertest
-# code.cloudfoundry.org/localip v0.18.0
+# code.cloudfoundry.org/localip v0.19.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/localip
-# code.cloudfoundry.org/tlsconfig v0.8.0
+# code.cloudfoundry.org/tlsconfig v0.9.0
 ## explicit; go 1.22
 code.cloudfoundry.org/tlsconfig
 code.cloudfoundry.org/tlsconfig/certtest
