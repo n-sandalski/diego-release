@@ -283,6 +283,7 @@ files:
   - code.cloudfoundry.org/vendor/github.com/mitchellh/ioprogress/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/moby/buildkit/frontend/dockerfile/command/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/moby/buildkit/frontend/dockerfile/instructions/*.go # gosub
+  - code.cloudfoundry.org/vendor/github.com/moby/buildkit/frontend/dockerfile/linter/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/moby/buildkit/frontend/dockerfile/parser/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/moby/buildkit/frontend/dockerfile/shell/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/moby/buildkit/util/stack/*.go # gosub
@@ -296,6 +297,7 @@ files:
   - code.cloudfoundry.org/vendor/github.com/opencontainers/image-spec/specs-go/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/opencontainers/image-spec/specs-go/v1/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/pkg/errors/*.go # gosub
+  - code.cloudfoundry.org/vendor/github.com/planetscale/vtprotobuf/protohelpers/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/prometheus/client_golang/internal/github.com/golang/gddo/httputil/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/prometheus/client_golang/internal/github.com/golang/gddo/httputil/header/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/prometheus/client_golang/prometheus/*.go # gosub
@@ -310,6 +312,7 @@ files:
   - code.cloudfoundry.org/vendor/github.com/sirupsen/logrus/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/spf13/cobra/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/spf13/pflag/*.go # gosub
+  - code.cloudfoundry.org/vendor/github.com/tonistiigi/go-csvvalue/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/vbatts/tar-split/archive/tar/*.go # gosub
   - code.cloudfoundry.org/vendor/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp/*.go # gosub
   - code.cloudfoundry.org/vendor/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp/internal/request/*.go # gosub
