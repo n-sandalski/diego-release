@@ -9,11 +9,11 @@ code.cloudfoundry.org/archiver/extractor/test_helper
 # code.cloudfoundry.org/bytefmt v0.21.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/bytefmt
-# code.cloudfoundry.org/cacheddownloader v0.0.0-20241112183650-5593d097a10b
+# code.cloudfoundry.org/cacheddownloader v0.0.0-20241210011823-7ae5910b9f48
 ## explicit; go 1.21
 code.cloudfoundry.org/cacheddownloader
 code.cloudfoundry.org/cacheddownloader/cacheddownloaderfakes
-# code.cloudfoundry.org/certsplitter v0.28.0
+# code.cloudfoundry.org/certsplitter v0.29.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/certsplitter/cmd/certsplitter
 # code.cloudfoundry.org/cf-routing-test-helpers v0.0.0-20241025163157-ce30ff0fff6d
@@ -30,7 +30,7 @@ code.cloudfoundry.org/cfhttp/v2/handlers
 ## explicit; go 1.22.0
 code.cloudfoundry.org/clock
 code.cloudfoundry.org/clock/fakeclock
-# code.cloudfoundry.org/cnbapplifecycle v0.0.4
+# code.cloudfoundry.org/cnbapplifecycle v0.0.5
 ## explicit; go 1.23
 code.cloudfoundry.org/cnbapplifecycle/cmd/builder
 code.cloudfoundry.org/cnbapplifecycle/cmd/builder/cli
@@ -42,7 +42,7 @@ code.cloudfoundry.org/cnbapplifecycle/pkg/errors
 code.cloudfoundry.org/cnbapplifecycle/pkg/keychain
 code.cloudfoundry.org/cnbapplifecycle/pkg/log
 code.cloudfoundry.org/cnbapplifecycle/pkg/staging
-# code.cloudfoundry.org/commandrunner v0.20.0
+# code.cloudfoundry.org/commandrunner v0.21.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/commandrunner
 # code.cloudfoundry.org/credhub-cli v0.0.0-20241209140622-eb4bf81f3916
@@ -74,7 +74,7 @@ code.cloudfoundry.org/durationjson
 # code.cloudfoundry.org/eventhub v0.21.0
 ## explicit; go 1.22.0
 code.cloudfoundry.org/eventhub
-# code.cloudfoundry.org/garden v0.0.0-20241204145308-c4f1fc9d4727 => ../garden
+# code.cloudfoundry.org/garden v0.0.0-20241211021234-a5b8a31e9187 => ../garden
 ## explicit; go 1.22.0
 code.cloudfoundry.org/garden
 code.cloudfoundry.org/garden/client
@@ -101,7 +101,7 @@ code.cloudfoundry.org/goshims/filepathshim
 code.cloudfoundry.org/goshims/http_wrap
 code.cloudfoundry.org/goshims/osshim
 code.cloudfoundry.org/goshims/osshim/os_fake
-# code.cloudfoundry.org/guardian v0.0.0-20241204145348-a102d0531d09 => ../guardian
+# code.cloudfoundry.org/guardian v0.0.0-20241211021801-4aa44a995dd4 => ../guardian
 ## explicit; go 1.22.7
 code.cloudfoundry.org/guardian/gardener
 code.cloudfoundry.org/guardian/gardener/container-spec
@@ -362,7 +362,7 @@ github.com/buildpacks/imgutil/layout
 github.com/buildpacks/imgutil/layout/sparse
 github.com/buildpacks/imgutil/local
 github.com/buildpacks/imgutil/remote
-# github.com/buildpacks/lifecycle v0.20.4
+# github.com/buildpacks/lifecycle v0.20.5
 ## explicit; go 1.23
 github.com/buildpacks/lifecycle/api
 github.com/buildpacks/lifecycle/archive
@@ -725,7 +725,7 @@ github.com/google/go-containerregistry/pkg/v1/stream
 github.com/google/go-containerregistry/pkg/v1/tarball
 github.com/google/go-containerregistry/pkg/v1/types
 github.com/google/go-containerregistry/pkg/v1/validate
-# github.com/google/pprof v0.0.0-20241210000721-77b369d382d3
+# github.com/google/pprof v0.0.0-20241210010833-40e02aabc2ad
 ## explicit; go 1.22
 github.com/google/pprof/profile
 # github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510
@@ -866,7 +866,7 @@ github.com/munnerz/goautoneg
 # github.com/nats-io/jwt/v2 v2.7.2
 ## explicit; go 1.22
 github.com/nats-io/jwt/v2
-# github.com/nats-io/nats-server/v2 v2.10.22
+# github.com/nats-io/nats-server/v2 v2.10.23
 ## explicit; go 1.21.0
 github.com/nats-io/nats-server/v2
 github.com/nats-io/nats-server/v2/conf
@@ -917,7 +917,7 @@ github.com/onsi/ginkgo/v2/internal/parallel_support
 github.com/onsi/ginkgo/v2/internal/testingtproxy
 github.com/onsi/ginkgo/v2/reporters
 github.com/onsi/ginkgo/v2/types
-# github.com/onsi/gomega v1.36.0
+# github.com/onsi/gomega v1.36.1
 ## explicit; go 1.22
 github.com/onsi/gomega
 github.com/onsi/gomega/format
@@ -947,7 +947,7 @@ github.com/opencontainers/go-digest
 ## explicit; go 1.18
 github.com/opencontainers/image-spec/specs-go
 github.com/opencontainers/image-spec/specs-go/v1
-# github.com/opencontainers/runc v1.2.2
+# github.com/opencontainers/runc v1.2.3
 ## explicit; go 1.22
 github.com/opencontainers/runc/libcontainer/cgroups
 github.com/opencontainers/runc/libcontainer/cgroups/fs
@@ -1077,7 +1077,7 @@ go.step.sm/crypto/x25519
 go.uber.org/automaxprocs/internal/cgroups
 go.uber.org/automaxprocs/internal/runtime
 go.uber.org/automaxprocs/maxprocs
-# golang.org/x/crypto v0.30.0
+# golang.org/x/crypto v0.31.0
 ## explicit; go 1.20
 golang.org/x/crypto/bcrypt
 golang.org/x/crypto/blake2b
@@ -1099,7 +1099,7 @@ golang.org/x/crypto/salsa20/salsa
 golang.org/x/crypto/scrypt
 golang.org/x/crypto/ssh
 golang.org/x/crypto/ssh/internal/bcrypt_pbkdf
-# golang.org/x/exp v0.0.0-20241204233417-43b7b7cde48d
+# golang.org/x/exp v0.0.0-20241210194714-1829a127f884
 ## explicit; go 1.22.0
 golang.org/x/exp/maps
 # golang.org/x/net v0.32.0
