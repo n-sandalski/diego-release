@@ -314,6 +314,8 @@ files:
   - code.cloudfoundry.org/vendor/github.com/spf13/pflag/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/tonistiigi/go-csvvalue/*.go # gosub
   - code.cloudfoundry.org/vendor/github.com/vbatts/tar-split/archive/tar/*.go # gosub
+  - code.cloudfoundry.org/vendor/go.opentelemetry.io/auto/sdk/*.go # gosub
+  - code.cloudfoundry.org/vendor/go.opentelemetry.io/auto/sdk/internal/telemetry/*.go # gosub
   - code.cloudfoundry.org/vendor/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp/*.go # gosub
   - code.cloudfoundry.org/vendor/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp/internal/request/*.go # gosub
   - code.cloudfoundry.org/vendor/go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp/internal/semconv/*.go # gosub
@@ -334,6 +336,7 @@ files:
   - code.cloudfoundry.org/vendor/go.opentelemetry.io/otel/semconv/v1.26.0/*.go # gosub
   - code.cloudfoundry.org/vendor/go.opentelemetry.io/otel/trace/*.go # gosub
   - code.cloudfoundry.org/vendor/go.opentelemetry.io/otel/trace/embedded/*.go # gosub
+  - code.cloudfoundry.org/vendor/go.opentelemetry.io/otel/trace/noop/*.go # gosub
   - code.cloudfoundry.org/vendor/golang.org/x/crypto/pkcs12/*.go # gosub
   - code.cloudfoundry.org/vendor/golang.org/x/crypto/pkcs12/internal/rc2/*.go # gosub
   - code.cloudfoundry.org/vendor/golang.org/x/sync/errgroup/*.go # gosub
@@ -361,6 +364,7 @@ files:
   - code.cloudfoundry.org/vendor/google.golang.org/protobuf/internal/impl/*.go # gosub
   - code.cloudfoundry.org/vendor/google.golang.org/protobuf/internal/order/*.go # gosub
   - code.cloudfoundry.org/vendor/google.golang.org/protobuf/internal/pragma/*.go # gosub
+  - code.cloudfoundry.org/vendor/google.golang.org/protobuf/internal/protolazy/*.go # gosub
   - code.cloudfoundry.org/vendor/google.golang.org/protobuf/internal/set/*.go # gosub
   - code.cloudfoundry.org/vendor/google.golang.org/protobuf/internal/strs/*.go # gosub
   - code.cloudfoundry.org/vendor/google.golang.org/protobuf/internal/version/*.go # gosub
