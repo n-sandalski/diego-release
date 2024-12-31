@@ -1,3 +1,11 @@
+# v1.38.0 (2024-12-28)
+
+* **Feature**: Restoring custom endpoint functionality for ECR
+
+# v1.37.0 (2024-12-26)
+
+* **Feature**: Add support for Dualstack Endpoints
+
 # v1.36.9 (2024-12-23)
 
 * **Documentation**: Documentation update for ECR GetAccountSetting and PutAccountSetting APIs.
