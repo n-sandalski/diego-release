@@ -31,10 +31,10 @@ require (
 	code.cloudfoundry.org/dockerdriver v0.31.0
 	code.cloudfoundry.org/durationjson v0.25.0
 	code.cloudfoundry.org/eventhub v0.24.0
-	code.cloudfoundry.org/garden v0.0.0-20241225021532-d08842acfc0b
+	code.cloudfoundry.org/garden v0.0.0-20250101021540-bcee180fbf4d
 	code.cloudfoundry.org/go-loggregator/v9 v9.2.1
 	code.cloudfoundry.org/goshims v0.55.0
-	code.cloudfoundry.org/guardian v0.0.0-20241225022126-5e82fc4cefb5
+	code.cloudfoundry.org/guardian v0.0.0-20250101022152-888b829e4480
 	code.cloudfoundry.org/lager/v3 v3.21.0
 	code.cloudfoundry.org/localip v0.25.0
 	code.cloudfoundry.org/tlsconfig v0.14.0
@@ -48,7 +48,7 @@ require (
 	github.com/cloudfoundry/dropsonde v1.1.0
 	github.com/containers/image/v5 v5.33.0
 	github.com/docker/libtrust v0.0.0-20160708172513-aabc10ec26b7
-	github.com/envoyproxy/go-control-plane v0.13.2
+	github.com/envoyproxy/go-control-plane v0.13.3
 	github.com/fsnotify/fsnotify v1.8.0
 	github.com/ghodss/yaml v1.0.0
 	github.com/go-sql-driver/mysql v1.8.1
@@ -95,11 +95,11 @@ require (
 
 require (
 	cel.dev/expr v0.19.1 // indirect
-	code.cloudfoundry.org/commandrunner v0.22.0 // indirect
+	code.cloudfoundry.org/commandrunner v0.23.0 // indirect
 	code.cloudfoundry.org/go-diodes v0.0.0-20241223074059-7f8c1f03edeb // indirect
 	filippo.io/edwards25519 v1.1.0 // indirect
 	github.com/Azure/azure-sdk-for-go v68.0.0+incompatible // indirect
-	github.com/Azure/go-ansiterm v0.0.0-20230124172434-306776ec8161 // indirect
+	github.com/Azure/go-ansiterm v0.0.0-20250102033503-faa5f7b0171c // indirect
 	github.com/Azure/go-autorest v14.2.0+incompatible // indirect
 	github.com/Azure/go-autorest/autorest v0.11.29 // indirect
 	github.com/Azure/go-autorest/autorest/adal v0.9.24 // indirect
@@ -119,8 +119,8 @@ require (
 	github.com/aws/aws-sdk-go-v2/internal/configsources v1.3.26 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.6.26 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/ini v1.8.1 // indirect
-	github.com/aws/aws-sdk-go-v2/service/ecr v1.38.0 // indirect
-	github.com/aws/aws-sdk-go-v2/service/ecrpublic v1.29.0 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ecr v1.38.1 // indirect
+	github.com/aws/aws-sdk-go-v2/service/ecrpublic v1.29.1 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.12.1 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.12.7 // indirect
 	github.com/aws/aws-sdk-go-v2/service/sso v1.24.8 // indirect
@@ -213,11 +213,11 @@ require (
 	go.opentelemetry.io/otel/trace v1.33.0 // indirect
 	go.step.sm/crypto v0.56.0 // indirect
 	go.uber.org/automaxprocs v1.6.0 // indirect
-	golang.org/x/exp v0.0.0-20241217172543-b2144cdd0a67 // indirect
+	golang.org/x/exp v0.0.0-20250103183323-7d7fa50e5329 // indirect
 	golang.org/x/sync v0.10.0 // indirect
 	golang.org/x/term v0.27.0 // indirect
 	golang.org/x/text v0.21.0 // indirect
 	golang.org/x/tools v0.28.0 // indirect
-	google.golang.org/genproto/googleapis/api v0.0.0-20241230172942-26aa7a208def // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20241230172942-26aa7a208def // indirect
+	google.golang.org/genproto/googleapis/api v0.0.0-20250102185135-69823020774d // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20250102185135-69823020774d // indirect
 )
